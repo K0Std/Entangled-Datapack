@@ -1,0 +1,184 @@
+{
+    "type": "origins:multiple",
+    "name": "Mechanical Wings",
+    "description": "You Don't need to equip an elytra to fly, As your metal wings allow you to.",
+    "luanch": {
+        "type": "origins:launch",
+        "name": "Luanch With Wings",
+        "description": "You can luanch like an elytrian but with a longer cooldown",
+        "hidden": false,
+        "cooldown": 1000,
+        "hud_render": {
+          "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+          "bar_index": 1
+        },
+        "sound": "minecraft:item.armor.equip_iron",
+        "speed": 1.5,
+        "key": {
+          "key": "key.origins.secondary_active",
+          "continuous": true
+        }
+    },
+    "vsx1a": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute at @s positioned ~ ~1 ~ run function entangled:mech_wings_neutral"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "entangled:electrical",
+                    "comparison": "<",
+                    "compare_to": 750
+                },
+                {
+                    "type": "origins:sneaking",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:fall_flying",
+                    "inverted": true
+                }
+            ]
+            
+        }
+    },
+    "vsx1b": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute at @s positioned ~ ~0.5 ~ run function entangled:mech_wings_neutral"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "entangled:electrical",
+                    "comparison": "<",
+                    "compare_to": 750
+                },
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:fall_flying",
+                    "inverted": true
+                }
+            ]
+            
+        }
+    },
+    "vsx1c": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute at @s positioned ~ ~ ~ run function entangled:mech_wings_neutral_flying"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "entangled:electrical",
+                    "comparison": "<",
+                    "compare_to": 750
+                },
+                {
+                    "type": "origins:fall_flying",
+                    "inverted": false
+                }
+            ]
+            
+        }
+    },
+    "vsx2a": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute at @s positioned ~ ~1 ~ run function entangled:mech_wings_charged"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "entangled:electrical",
+                    "comparison": ">=",
+                    "compare_to": 750
+                },
+                {
+                    "type": "origins:sneaking",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:fall_flying",
+                    "inverted": true
+                }
+            ]
+            
+        }
+    },
+    "vsx2b": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute at @s positioned ~ ~0.5 ~ run function entangled:mech_wings_charged"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "entangled:electrical",
+                    "comparison": ">=",
+                    "compare_to": 750
+                },
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:fall_flying",
+                    "inverted": true
+                }
+            ]
+            
+        }
+    },
+    "vsx2c": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute at @s positioned ~ ~ ~ run function entangled:mech_wings_charged_flying"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "entangled:electrical",
+                    "comparison": ">=",
+                    "compare_to": 750
+                },
+                {
+                    "type": "origins:fall_flying",
+                    "inverted": false
+                }
+            ]
+            
+        }
+    },
+    "wings": {
+        "type": "origins:elytra_flight",
+        "render_elytra": false
+    }
+}

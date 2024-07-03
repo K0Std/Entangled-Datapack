@@ -1,0 +1,23 @@
+{
+    "hidden": false,
+    "type": "origins:multiple",
+    "name": "Flaming Fist",
+    "description": "You have a custom M1 that sets your enemy on fire.",
+    "soulm1power":{
+        "type": "origins:self_action_on_hit",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute as @s positioned ~ ~1 ~ run function entangled:soulm1"
+        },
+        "cooldown": 1
+    },
+    "setonfire": {
+        "type": "origins:target_action_on_hit",
+        "entity_action": {
+            "type": "origins:set_on_fire",
+            "duration": 6
+        },
+        "cooldown": 1
+    }
+    
+}

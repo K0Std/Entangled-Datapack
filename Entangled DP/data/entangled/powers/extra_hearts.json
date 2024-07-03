@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Extra Hearts",
+    "description": "You Gain 10 extra hearts",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "effect give @s minecraft:absorption 1 4 true"
+    },
+    "condition": {
+        "type": "origins:resource",
+        "resource": "entangled:electrical",
+        "comparison": ">=",
+        "compare_to": 500
+    }
+}

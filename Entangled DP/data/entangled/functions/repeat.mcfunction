@@ -1,0 +1,1 @@
+team join mechs @e[tag=Summoned]

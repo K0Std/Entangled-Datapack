@@ -1,0 +1,12 @@
+{
+    "type": "origins:particle",
+    "particle": "minecraft:electric_spark",
+    "frequency": 4,
+    "hidden": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "entangled:electrical",
+        "comparison": "==",
+        "compare_to": 1000
+    }
+}

@@ -1,0 +1,18 @@
+{
+	"loading_priority": 1,
+    "name": "Reptiling",
+    "description": "The Reptile Sibling Of the Merling",
+	"powers": [
+        "entangled:water_breathing",
+        "origins:aqua_affinity",
+        "entangled:extra_trident_damage",
+        "entangled:revert_wb",
+        "origins:swim_speed",
+        "origins:aquatic",
+        "entangled:fire_damage",
+        "origins:water_vision"
+    ],
+	"icon": "minecraft:heart_of_the_sea",
+	"order": 1,
+	"impact": 2
+}

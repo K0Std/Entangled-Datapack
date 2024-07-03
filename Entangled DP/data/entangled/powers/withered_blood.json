@@ -1,0 +1,30 @@
+{
+    "hidden": false,
+    "type": "origins:multiple",
+    "name": "Withered Blood",
+        "description": "You heal from wither damage half heart regardless of the value of the damage.",
+    "0": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "wither"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "wither.player"
+                }
+            ]
+        },
+        "self_action": {
+            "type": "origins:heal",
+            "amount": 1
+        },
+        "modifier": {
+            "operation": "multiply_total_additive",
+            "value": 0
+        }
+    }
+}

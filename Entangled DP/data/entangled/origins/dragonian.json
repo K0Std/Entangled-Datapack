@@ -1,0 +1,19 @@
+{
+	"loading_priority": 1,
+    "name": "Dragonian",
+    "description": "An Eyltrian Born in the End",
+	"powers": [
+        "entangled:healer",
+        "origins:end_spawn",
+        "origins:elytra",
+        "entangled:unkillable",
+        "entangled:ender_protection",
+        "entangled:no_exhaustion",
+        "entangled:hover",
+        "origins:launch_into_air",
+        "origins:aerial_combatant"
+    ],
+	"icon": "minecraft:dragon_egg",
+	"order": 0,
+	"impact": 3
+}

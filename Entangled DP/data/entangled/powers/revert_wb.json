@@ -1,0 +1,19 @@
+{
+    "type": "origins:active_self",
+    "name": "Reptile",
+    "description": "Your Lungs Evolved to breath on land as good as in water",
+    "hidden": true,
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    },
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water",
+        "inverted": true
+    },
+    "entity_action": {
+        "type": "origins:command",
+        "command": "effect clear @s minecraft:water_breathing"
+    }
+}

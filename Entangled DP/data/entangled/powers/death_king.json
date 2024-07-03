@@ -1,0 +1,43 @@
+{
+    "type": "origins:active_self",
+    "hidden": false,
+    "cooldown": 4000,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 5,
+        "inverted": false
+    },
+    "name": "Death King",
+    "description": "You Kill Anyone in Your Line of Sight in a sphere-shape of 16 blocks in radius, but you are put on half a heart.",
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:area_of_effect",
+                "radius": 16.0,
+                "shape": "sphere",
+                "bientity_condition": {
+                    "type": "origins:can_see"
+                },
+                "bientity_action": {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "kill @s"
+                    }
+                }
+
+            },
+            {
+                "type": "origins:damage",
+                "amount": 19,
+                "damage_type": "minecraft:out_of_world"
+            }
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "hidden": false,
+  "type": "origins:attribute",
+  "name": "Ender Protection",
+  "description": "Even without armor your skin provides natural protection (Armor Points).",
+  "modifier": {
+    "name": "Divine Protection",
+    "attribute": "minecraft:generic.armor",
+    "value": 10.0,
+    "operation": "addition"
+  }
+}

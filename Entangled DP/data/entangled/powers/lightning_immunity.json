@@ -1,0 +1,19 @@
+{
+    "type": "origins:multiple",
+    "name": "Lighting Immunity",
+    "description": "You're Immune to all lightning damage",
+    "0":{
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "lightningBolt"
+        }
+    },
+    "1":{
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "lightningBolt.player"
+        }
+    }
+}

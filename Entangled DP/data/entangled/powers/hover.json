@@ -1,0 +1,46 @@
+{
+    "type": "origins:multiple",
+    "name": "Anti-Gravity",
+    "description": "Your wings allow you to hover",
+    "hovercooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 300
+    },
+    "toggle": {
+        "type":"origins:active_self",
+        "retain_state": false,
+        "key": {
+            "key":"key.origins.secondary_active",
+            "continuous": false
+        },
+        "entity_action": {
+            "type": "origins:trigger_cooldown",
+            "power": "*:*_hovercooldown"
+        },
+        "cooldown": 300,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 7,
+            "inverted": true
+        }
+    },
+    "flight": {
+        "type":"origins:creative_flight",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_hovercooldown",
+                    "comparison": "!=",
+                    "compare_to": 0
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Soulborn",
+    "description": "You Are A Blaze but with blue fire.",
+	"powers": [
+		"origins:fire_immunity",
+		"origins:nether_spawn",
+		"origins:burning_wrath",
+		"origins:hotblooded",
+		"origins:water_vulnerability",
+		"origins:damage_from_snowballs",
+        "entangled:flaming_fist",
+        "entangled:soulfire_flames"
+	],
+	"icon": {
+		"item": "minecraft:blaze_powder"
+	},
+	"order": 1,
+	"impact": 3
+}

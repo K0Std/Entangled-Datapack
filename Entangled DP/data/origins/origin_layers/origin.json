@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "origins": [
+      "entangled:dragonian",
+      "entangled:reptiling",
+      "entangled:martial_ghoul",
+      "entangled:soulborn",
+      "entangled:robotic",
+      "entangled:prehistoric"
+    ]
+  }

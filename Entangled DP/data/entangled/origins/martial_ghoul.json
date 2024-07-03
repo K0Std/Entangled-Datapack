@@ -1,0 +1,14 @@
+{
+	"loading_priority": 1,
+	"name": "Martial Ghoul",
+	"description": "Not to be confused with \"Tokyo Ghoul\".",
+	"powers": [
+		"entangled:wither_wrath",
+		"entangled:withered_blood",
+        "entangled:death_king",
+		"origins:hotblooded"
+    ],
+	"icon": "minecraft:wither_skeleton_skull",
+	"order": 3,
+	"impact": 2
+}

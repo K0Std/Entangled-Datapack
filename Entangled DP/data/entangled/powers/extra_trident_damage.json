@@ -1,0 +1,23 @@
+{
+    "hidden": false,
+    "type": "origins:self_action_on_hit",
+    "name": "Aquatic Warrior",
+    "description": "You Are Skilled with Aquatic Weapons (Extra Damage With Tridents)",
+    "cooldown": 20,
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "effect give @s strength 5 2 true"
+    },
+    "condition": {
+        "type": "origins:inventory",
+        "slot": "weapon.mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:trident"
+            },
+            "comparison": "==",
+            "compare_to": 1
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "origins:resource",
+    "name": "Electric Battery",
+    "description": "You Charge your internal capacitors by landing hits (M1 / Ranged) to gain buffs.\nAt 25%: You get a Custom Visual M1.\nAt 50%: Your M1s now summon lightning on your target and you get 10 additional hearts.\nAt 75%: You can Use your \"Mechanical Construct\" Power and your wings Change Color from blue to Turquoise.\nAt 100% You Can Use your \"Lightning Strike\" Power and Spark Particles appear around you.",
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 14
+    },
+    "min": 0,
+    "max": 1000,
+    "start_value": 0
+}

@@ -1,0 +1,30 @@
+{
+    "hidden": false,
+    "type": "origins:active_self",
+    "name": "Healer",
+    "description": "You Can Heal Yourself and others",
+    "key": {
+        "key": "key.spectatorOutlines"
+    },
+    "cooldown": 1000,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 7,
+        "icon_index": 1,
+        "inverted": false
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions":[
+            {
+                "type": "origins:heal",
+                "amount": 6
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "execute at @s run effect give @e[distance=..10] minecraft:instant_health 1 1 false"
+            }
+        ]
+    }
+}

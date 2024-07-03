@@ -1,0 +1,260 @@
+{
+    "type": "origins:multiple",
+    "name": "Impenetrable Shield",
+    "description": "Having lived with the ender dragon for so long, you gain a shield similar to that of the dragon in flight. Although it's temporary",
+    "maxtimeactive": {
+        "type": "origins:cooldown",
+        "cooldown": 2000,
+        "hud_render": {
+            "should_render": true,
+            
+            "bar_index": 3,
+            "inverted": false
+        }
+    },
+    "toggle": {
+        "type": "origins:active_self",
+        "retain_state": false,
+        "key": {
+            "key": "key.loadToolbarActivator"
+        },
+        "cooldown": 200,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_maxtimeactive",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "entity_action": {
+            "type": "origins:trigger_cooldown",
+            "power": "*:*_maxtimeactive"
+        },
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 0,
+            "inverted": true
+        }
+    },
+    "0": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "arrow"
+         },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "1": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "arrow.item"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "2": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "explosion"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "3": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "explosion.player"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "4": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fireball"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "5": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fireball.item"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "6": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fireworks"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "7": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fireworks.player"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "8": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fireworks.item"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "9": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "inFire"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "10": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "inFire.player"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "11": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "lava"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "12": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "lava.player"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "13": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "lightningBolt"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "14": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "lightningBolt.player"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "15": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "mob"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "16": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "mob.item"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_toggle",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    }
+}

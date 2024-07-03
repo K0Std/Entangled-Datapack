@@ -1,0 +1,15 @@
+{
+    "hidden": false,
+    "name": "Aquatic Body",
+    "description": "You are weak to fire damage.",
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:in_tag",
+        "tag": "minecraft:is_fire"
+    },
+    "modifier": {
+        "name": "Weak to Fire",
+        "operation": "addition",
+        "value": 5.5
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "hidden": false,
+  "type": "origins:modify_exhaustion",
+  "modifier": {
+    "name": "No exhaustion from Origin power",
+    "operation": "multiply_total",
+    "value": 0
+  },
+  "name": "Heavenly Blood",
+  "description": "Your Blood Keeps you from getting exhuasted"
+}

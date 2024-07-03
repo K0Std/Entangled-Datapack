@@ -1,0 +1,15 @@
+{
+    "name": "Prehistoric",
+    "description": "This is what fossils would look like if they were real mobs",
+	"powers": [
+        "entangled:rtailwind",
+        "origins:carnivore",
+        "origins:hotblooded",
+        "entangled:bite_effect"
+	],
+	"icon": {
+		"item": "minecraft:sniffer_egg"
+	},
+	"order": 1,
+	"impact": 3
+}

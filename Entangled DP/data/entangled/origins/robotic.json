@@ -1,0 +1,23 @@
+{
+    "name": "Robotic",
+    "description": "Don't Underestimate this piece of metal",
+	"powers": [
+        "entangled:electrical",
+        "entangled:charge_battery_m1",
+        "entangled:decharge_when_hit",
+        "entangled:lightning_strike",
+        "entangled:mech_const",
+        "entangled:sparks",
+        "entangled:extra_hearts",
+        "entangled:lightning_immunity",
+        "entangled:water_vulnerability",
+        "origins:fire_immunity",
+        "entangled:electric_m1",
+        "entangled:mech_wings"
+	],
+	"icon": {
+		"item": "minecraft:lightning_rod"
+	},
+	"order": 1,
+	"impact": 3
+}
